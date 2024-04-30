@@ -1,0 +1,12 @@
+/* Login Css  */
+#loginAfterandBefor::before,
+#loginAfterandBefor::after {
+  display: inline-block !important;
+  content: "" !important;
+  border-top: 1px solid #0b3a8a !important;
+  border-radius: 50px !important;
+  width: 100px !important;
+  margin: -11px 1rem !important;
+  transform: translateY(-1rem) !important;
+}
+
