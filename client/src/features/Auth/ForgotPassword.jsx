@@ -16,13 +16,9 @@ export default function ForgotPassword() {
         <Formik
           initialValues={{ email: "" }}
           validate={(values) => {
-            console.log(values);
-
             return validate(values, "forgotPassword");
           }}
-          onSubmit={(values, { setSubmitting }) => {
-            console.log(values);
-          }}
+          onSubmit={(values, { setSubmitting }) => {}}
         >
           {({
             values,

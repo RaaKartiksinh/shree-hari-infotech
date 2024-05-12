@@ -32,212 +32,467 @@
       "confirmPassword": "Kartik@123"
     }
   ],
-  "sidedata": [
+  "site": [
     {
-      "id": "6521",
-      "sitename": "The White 2",
-      "siteid": 12345,
-      "sitephoto": "https://cdn.britannica.com/43/93843-050-A1F1B668/White-House-Washington-DC.jpg",
-      "houseno": "1234",
-      "apartmentname": "43321",
-      "addressline1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
+      "site_name": "The White 2",
+      "site_id": 12345,
+      "site_photo": "https://cdn.britannica.com/43/93843-050-A1F1B668/White-House-Washington-DC.jpg",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
       "pincode": 365620,
       "city": "chital",
       "state": "Gujarat",
-      "country": "India",
+      "contry": "India",
       "longitude": 12345,
-      "latitude": 555432
+      "latitude": 555432,
+      "id": "d0cf"
     },
     {
-      "id": "5978",
-      "sitename": "The White 3",
-      "siteid": 12345,
-      "sitephoto": "https://i.pinimg.com/originals/b4/b9/aa/b4b9aac0fd4a6efd448db56874b15326.jpg",
-      "houseno": "1234",
-      "apartmentname": "43321",
-      "addressline1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
+      "site_name": "dsfsdgdfsgdf",
+      "site_id": 12345,
+      "site_photo": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
       "pincode": 365620,
       "city": "chital",
       "state": "Gujarat",
-      "country": "India",
-      "longitude": 12345,
-      "latitude": 555432
-    },
-    {
-      "id": "5932",
-      "sitename": "dsfsdgdfsgdf",
-      "siteid": 12345,
-      "sitephoto": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg",
-      "houseno": "1234",
-      "apartmentname": "43321",
-      "addressline1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
-      "pincode": 365620,
-      "city": "chital",
-      "state": "Gujarat",
-      "country": "India",
+      "contry": "India",
       "longitude": 1,
-      "latitude": 555432
+      "latitude": 555432,
+      "id": "d200"
     },
     {
-      "id": "5942",
-      "sitename": "The black 5",
-      "siteid": 1234566,
-      "sitephoto": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg",
-      "houseno": "1234",
-      "apartmentname": "43321",
-      "addressline1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
+      "site_name": "The black 5",
+      "site_id": 1234566,
+      "site_photo": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/home-improvement/wp-content/uploads/2022/07/download-23.jpg",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
       "pincode": 365620,
       "city": "amrelili",
       "state": "Gujarat",
-      "country": "India",
+      "contry": "India",
       "longitude": 77.5767389,
-      "latitude": 12.8928882
+      "latitude": 12.8928882,
+      "id": "b06f"
     },
     {
-      "id": "1200",
-      "sitename": "sarvaiya",
-      "siteid": 1000005,
-      "sitephoto": "C:\\fakepath\\Screenshot from 2024-04-22 23-05-05.png",
-      "houseno": "",
-      "apartmentname": "",
-      "addressline1": "Address - PLOT NO - 20, SHOP NO - 3, NEAR BANK OF BARODA, MOTI KUKAVAV, AMRELI - 365420.",
+      "site_name": "veer ",
+      "site_id": 4567,
+      "site_photo": "fgfgfgffgfgf",
+      "address_line1": "Address - PLOT NO - 20, SHOP NO - 3, NEAR BANK OF BARODA, MOTI KUKAVAV, AMRELI - 365420.",
       "pincode": 365420,
       "city": "Amreli",
       "state": "Gujarat",
-      "country": "India",
-      "longitude": 77.5767389,
-      "latitude": 12.8928882
+      "contry": "India",
+      "longitude": 77.5733936,
+      "latitude": 12.8871062,
+      "id": "d59d"
     },
     {
-      "id": "2100",
-      "sitename": "mhavir nagar",
-      "siteid": 234567,
-      "sitephoto": "C:\\fakepath\\24px.svg",
-      "houseno": "",
-      "apartmentname": "",
-      "addressline1": " essar petrol pump pase , amreli road ,chital,amreli",
+      "site_name": "The White House",
+      "site_id": 656565,
+      "site_photo": "",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli ,chital,amreli",
       "pincode": 365620,
+      "city": "sssssssssssssssssssssss",
+      "state": "Gujarat",
+      "contry": "India",
+      "longitude": 77.5999732,
+      "latitude": 12.9004395,
+      "id": "3e55"
+    },
+    {
+      "site_name": "Kartiksinh sarvaiya ",
+      "site_id": 65446,
+      "site_photo": "C:\\fakepath\\Screenshot from 2024-04-30 20-05-05.png",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
+      "pincode": "365620",
       "city": "chital",
       "state": "Gujarat",
-      "country": "India",
-      "longitude": 77.5767389,
-      "latitude": 12.8928882
+      "contry": "India",
+      "longitude": 77.6208384,
+      "latitude": 12.8811008,
+      "id": "eed7"
     },
     {
-      "id": "bd3e",
-      "sitename": "The White House22",
-      "siteid": 4567,
-      "sitephoto": "C:\\fakepath\\1 curd opp on site width.txt",
-      "houseno": "",
-      "apartmentname": "",
-      "addressline1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
-      "pincode": 365621,
-      "city": "babra",
+      "site_name": "Kartiksinh sarvaiya ",
+      "site_id": 6546,
+      "site_photo": "C:\\fakepath\\Screenshot from 2024-04-30 20-05-05.png",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
+      "pincode": "365620",
+      "city": "chital",
       "state": "Gujarat",
-      "country": "India",
-      "longitude": 77.57411,
-      "latitude": 12.8870964
+      "contry": "India",
+      "longitude": 77.6208384,
+      "latitude": 12.8811008,
+      "id": "8dbc"
+    },
+    {
+      "site_name": "Kartiksinh sarvaiya ",
+      "site_id": 6562,
+      "site_photo": "C:\\fakepath\\Screenshot from 2024-04-30 20-05-05.png",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
+      "pincode": "365620",
+      "city": "chital",
+      "state": "Gujarat",
+      "contry": "India",
+      "longitude": 77.6208384,
+      "latitude": 12.8811008,
+      "id": "c1ba"
+    },
+    {
+      "site_name": "Kartiksinh sarvaiya ",
+      "site_id": 6256,
+      "site_photo": "C:\\fakepath\\Screenshot from 2024-04-30 20-05-05.png",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
+      "pincode": "365620",
+      "city": "chital",
+      "state": "Gujarat",
+      "contry": "India",
+      "longitude": 77.6208384,
+      "latitude": 12.8811008,
+      "id": "e084"
+    },
+    {
+      "id": "8210",
+      "site_name": "dfdfdfdfdfdfdfd",
+      "site_photo": "C:\\fakepath\\company_image.jpeg",
+      "address_line1": "kjhgfdfghj",
+      "pincode": "456789",
+      "city": "jjj",
+      "state": "jjj",
+      "contry": "khjugu",
+      "longitude": 77.5716864,
+      "latitude": 12.9007616
     }
   ],
-  "super": [
+  "supervisor": [
     {
-      "supervisorphoto": "https://pbs.twimg.com/profile_images/1701039521440342016/RK7bpvPs_400x400.jpg",
-      "firstname": "Abhi",
-      "lastname": "Dhandhukiya",
-      "supervisoremail": "abhi@123@gmail",
-      "supervisorpassword": "Abhi@123",
-      "phonenumber": "9313944877",
-      "emergencynumber": "9714222904",
-      "employeeid": "456321",
-      "dateofbirth": "11/08/2001",
-      "addressline1": "Address - PLOT NO - 20, SHOP NO - 3, NEAR BANK OF BARODA, MOTI KUKAVAV, AMRELI - 365420.",
-      "addressline2": "",
-      "landmark": "chital",
-      "pincode": "365620",
-      "city": "rajkot",
-      "state": "Gujarat",
-      "country": "india",
-      "joiningdate": "11/08/2023"
-    },
-    {
-      "id": "5d07",
-      "supervisorphoto": "C:\\fakepath\\1 curd opp on site width.txt",
-      "firstname": "Piyushabhai",
+      "supervisor_id": "bb1c",
+      "supervisor_photo": "https://cdn.vectorstock.com/i/1000x1000/46/36/funny-cartoon-builder-vector-814636.webp",
+      "firstname": "kartik",
       "lastname": "sarvaiya",
-      "supervisoremail": "Hirensarvaiya06@gmail.com",
-      "supervisorpassword": "asdefewfwe",
-      "phonenumber": 9876543456,
-      "emergencynumber": 2345678976,
-      "employeeid": "343",
-      "dateofbirth": "2024-04-04",
-      "addressline1": "Address - PLOT NO - 20, SHOP NO - 3, NEAR BANK OF BARODA, MOTI KUKAVAV, AMRELI - 365420.",
-      "addressline2": "afesgdrh",
-      "landmark": "adsfdgh",
-      "pincode": 365420,
+      "supervisor_email": "raakartiksinh@gmail.com",
+      "supervisor_password": "Kartiksinh@123",
+      "phone_number": 9313944877,
+      "emergency_number": 9714222904,
+      "dateofbirth": "2001-11-08",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli ,chital,amreli",
+      "address_line2": "chital , amreli",
+      "landmark": "chital",
+      "pincode": 365620,
       "city": "Amreli",
       "state": "Gujarat",
       "country": "India",
-      "joiningdate": "2024-04-18"
+      "joining_date": "2041-02-14",
+      "id": "bb77"
     },
     {
-      "id": "e2ee",
-      "supervisorphoto": "C:\\fakepath\\24px.svg",
+      "supervisor_id": "bgb1c",
+      "supervisor_photo": "https://cdn.vectorstock.com/i/1000x1000/46/36/funny-cartoon-builder-vector-814636.webp",
+      "firstname": "parth",
+      "lastname": "sarvaiya",
+      "supervisor_email": "raakartiksinh@gmail.com",
+      "supervisor_password": "Kartiksinh@123",
+      "phone_number": 9313944877,
+      "emergency_number": 9714222904,
+      "dateofbirth": "2001-11-08",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli ,chital,amreli",
+      "address_line2": "chital , amreli",
+      "landmark": "chital",
+      "pincode": 365620,
+      "city": "Amreli",
+      "state": "Gujarat",
+      "country": "India",
+      "joining_date": "2041-02-14",
+      "id": "bb77"
+    },
+    {
+      "supervisor_id": "66b4",
+      "supervisor_photo": "https://www.shutterstock.com/shutterstock/photos/2337681999/display_1500/stock-vector-profesional-worker-with-clipboard-engineer-in-uniform-2337681999.jpg",
+      "firstname": "jay",
+      "lastname": "Bhai",
+      "supervisor_email": "jay@gmail.com",
+      "supervisor_password": "jay@123",
+      "phone_number": "9714222904",
+      "emergency_number": "9313944877",
+      "employeeid": "",
+      "dateofbirth": "2001-08-11",
+      "address_line1": "Address - PLOT NO - 20, SHOP NO - 3, NEAR BANK OF BARODA, MOTI KUKAVAV, AMRELI - 365420.",
+      "address_line2": "",
+      "landmark": "",
+      "pincode": "365620",
+      "city": "chital",
+      "state": "Gujarat",
+      "country": "India",
+      "joining_date": "2024-05-17",
+      "id": "e886"
+    },
+    {
+      "supervisor_id": "e40b",
+      "supervisor_photo": "https://www.shutterstock.com/shutterstock/photos/2337681999/display_1500/stock-vector-profesional-worker-with-clipboard-engineer-in-uniform-2337681999.jpg",
       "firstname": "Piyushabhai",
       "lastname": "sarvaiya",
-      "supervisoremail": "Hirensarvaiya06@gmail.com",
-      "supervisorpassword": "Kartiksinh@123",
-      "phonenumber": 9714222904,
-      "emergencynumber": 9714222904,
-      "employeeid": "343",
-      "dateofbirth": "2011-02-28",
-      "addressline1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
-      "addressline2": "kuyghjkuytiuyt",
-      "landmark": "chitral",
-      "pincode": 123456,
+      "supervisor_email": "Hirensarvaiya06@gmail.com",
+      "supervisor_password": "Kartiksnh@1223",
+      "phone_number": "9142229042",
+      "emergency_number": "2345678987",
+      "employeeid": "",
+      "dateofbirth": "2001-02-22",
+      "address_line1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
+      "address_line2": "sdfg",
+      "landmark": "gfds",
+      "pincode": "365620",
       "city": "chital",
       "state": "Gujarat",
       "country": "India",
-      "joiningdate": "2024-04-11"
+      "joining_date": "2024-04-29",
+      "id": "6eef"
     },
     {
-      "id": "5d59",
-      "supervisorphoto": "C:\\fakepath\\24px.svg",
-      "firstname": "om ",
-      "lastname": " nakrani",
-      "supervisoremail": "om@gmail.com",
-      "supervisorpassword": "Kartiksinh@123",
-      "phonenumber": 9714222904,
-      "emergencynumber": 97142229045,
-      "employeeid": "343",
-      "dateofbirth": "2024-04-24",
-      "addressline1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
-      "addressline2": "afesgdrh",
-      "landmark": "adsfdgh",
-      "pincode": 365620,
+      "supervisor_id": "0568",
+      "supervisor_photo": "https://www.shutterstock.com/shutterstock/photos/2337681999/display_1500/stock-vector-profesional-worker-with-clipboard-engineer-in-uniform-2337681999.jpg",
+      "firstname": "abhi",
+      "lastname": "dhandhukiya",
+      "supervisor_email": "dhandhukiya@gmail.com",
+      "supervisor_password": "desQAS234",
+      "phone_number": "8907654324",
+      "emergency_number": "4387965435",
+      "employeeid": "",
+      "dateofbirth": "2003-02-21",
+      "address_line1": "xfdbgfhnjgfyhert654yrt",
+      "address_line2": "esfsdgdfhdfh",
+      "landmark": "fgvfsgdrg45645y",
+      "pincode": "546545",
       "city": "chital",
       "state": "Gujarat",
       "country": "India",
-      "joiningdate": "2024-04-18"
-    },
-    {
-      "id": "5d59",
-      "supervisorphoto": "C:\\fakepath\\24px.svg",
-      "firstname": "Raju",
-      "lastname": " chotaBhim",
-      "supervisoremail": "om@gmail.com",
-      "supervisorpassword": "Kartiksinh@123",
-      "phonenumber": 9714222904,
-      "emergencynumber": 97142229045,
-      "employeeid": "343",
-      "dateofbirth": "2024-04-24",
-      "addressline1": "ambika nagar, essar petrol pump pase , amreli road ,chital,amreli",
-      "addressline2": "afesgdrh",
-      "landmark": "adsfdgh",
-      "pincode": 365620,
-      "city": "chital",
-      "state": "Gujarat",
-      "country": "India",
-      "joiningdate": "2024-04-18"
+      "joining_date": "2024-05-15",
+      "id": "e0d4"
     }
+  ],
+  "supervisorDate": [
+    {
+      "id": "bb1c",
+      "superdate": [
+        {
+          "sdate": "2024-05-01",
+          "isPresent": "present",
+          "attendanceImage": "/me/1.jpeg",
+          "startTime": "8:01 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-05-02",
+          "isPresent": "present",
+          "attendanceImage": "/me/1.jpeg",
+          "startTime": "8:02 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-05-03",
+          "isPresent": "present",
+          "attendanceImage": "/me/1.jpeg",
+          "startTime": "8:20 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-05-04",
+          "isPresent": "absent",
+          "reason": "I am going to School"
+        },
+        {
+          "sdate": "2024-05-05",
+          "isPresent": "absent",
+          "reason": "I am going to Home"
+        },
+
+        {
+          "sdate": "2024-05-06",
+          "isPresent": "leave",
+          "reason": "I am going to nothing"
+        },
+        {
+          "sdate": "2024-05-07",
+          "isPresent": "present",
+          "attendanceImage": "/me/1.jpeg",
+          "startTime": "8:52 AM",
+          "endTime": "7:12 PM"
+        },
+        {
+          "sdate": "2024-05-08",
+          "isPresent": "present",
+          "attendanceImage": "/me/1.jpeg",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-05-09",
+          "isPresent": "present",
+          "attendanceImage": "/me/1.jpeg",
+          "startTime": "8:10 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-05-10",
+          "isPresent": "present",
+          "attendanceImage": "/me/1.jpeg",
+          "startTime": "8:06 AM",
+          "endTime": "10:00 PM"
+        }
+      ]
+    },
+    { "id": "66b4", "superdate": [] },
+    {
+      "id": "e40b",
+      "superdate": [
+        {
+          "sdate": "2024-04-01",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-02",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-03",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-04",
+          "isPresent": "absent",
+          "reason": "I am going to Market"
+        },
+        {
+          "sdate": "2024-04-05",
+          "isPresent": "absent",
+          "reason": "I am going to Toilet"
+        },
+
+        {
+          "sdate": "2024-04-06",
+          "isPresent": "leave",
+          "reason": "I am going to leve"
+        },
+        {
+          "sdate": "2024-04-08",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-09",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-10",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-11",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-12",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-13",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-16",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-17",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-18",
+          "isPresent": "absent",
+          "reason": "I am going Nilol"
+        },
+        {
+          "sdate": "2024-04-19",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-22",
+          "isPresent": "leave",
+          "reason": "I am going to Live to instagram"
+        },
+        {
+          "sdate": "2024-04-23",
+          "isPresent": "leave",
+          "reason": "I am going to Home"
+        },
+
+        {
+          "sdate": "2024-04-24",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-25",
+          "isPresent": "absent",
+          "reason": "I am going to Home"
+        },
+        {
+          "sdate": "2024-04-26",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-27",
+          "isPresent": "absent",
+          "reason": "I am going to Home"
+        },
+        {
+          "sdate": "2024-04-29",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-30",
+          "isPresent": "absent",
+          "reason": "I am going to Home"
+        },
+        {
+          "sdate": "2024-04-31",
+          "isPresent": "present",
+          "startTime": "10:00 AM",
+          "endTime": "7:00 PM"
+        },
+        {
+          "sdate": "2024-04-32",
+          "isPresent": "absent",
+          "reason": "I am going to Home"
+        }
+      ]
+    },
+    { "id": "0568", "superdate": [] }
   ]
 }

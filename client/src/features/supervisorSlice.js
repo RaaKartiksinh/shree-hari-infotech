@@ -3,9 +3,14 @@ import apiHelper from "../app/common/ApiHelper";
 
 const initialState = {
   status: "idle",
+  error: null,
   supervisorData: [],
+  supervisorAttendance: [],
+  supervisorAttendanceStatus: "idle",
+  supervisorAttendanceError: "idle",
 };
 
+// Get supervisor
 export const getSupervisorAsync = createAsyncThunk(
   "get/supervisor",
   async (_, { rejectWithValue }) => {
@@ -24,6 +29,7 @@ export const getSupervisorAsync = createAsyncThunk(
   }
 );
 
+// Create Supervisor
 export const createSupervisorAsync = createAsyncThunk(
   "create/supervisor",
   async (data, { rejectWithValue }) => {
@@ -42,12 +48,12 @@ export const createSupervisorAsync = createAsyncThunk(
     }
   }
 );
+// Update Supervisor
 export const editSupervisorAsync = createAsyncThunk(
   "edit/supervisor",
   async (editSupervisordata, { rejectWithValue }) => {
     try {
       const result = await apiHelper.editSupervisor(editSupervisordata);
-      console.log(result.data, "result");
       if (result && result.data) {
         return result.data;
       }
@@ -61,12 +67,32 @@ export const editSupervisorAsync = createAsyncThunk(
   }
 );
 
+// Delete Supervisor
 export const deleteSupervisorAsync = createAsyncThunk(
   "delete/supervisor",
-  async (supervisorId, { rejectWithValue }) => {
+  async (supervisor_id, { rejectWithValue, dispatch }) => {
     try {
-      const result = await apiHelper.deleteSupervisor(supervisorId);
+      const result = await apiHelper.deleteSupervisor(supervisor_id);
       console.log(result.data, "resultdelete");
+      if (result && result.data) {
+        dispatch(getSupervisorAsync());
+        // return result.data;
+      }
+    } catch (error) {
+      console.log("Error occurred while fetching site data:", error);
+      if (!error.response) {
+        throw error;
+      }
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
+// Attendance Supervisor
+export const getSupervisorAttendanceAsync = createAsyncThunk(
+  "get/supervisorAttendance",
+  async (s_id, { rejectWithValue }) => {
+    try {
+      const result = await apiHelper.getSupervisorAttendance(s_id);
       if (result && result.data) {
         return result.data;
       }
@@ -102,7 +128,7 @@ export const supervisorSlice = createSlice({
       })
       .addCase(createSupervisorAsync.fulfilled, (state, action) => {
         state.status = "idle";
-        state.supervisorData.push(action.payload);
+        state.supervisorData.push(action.payload.supervisor);
       })
       .addCase(createSupervisorAsync.rejected, (state, action) => {
         state.status = "idle";
@@ -113,9 +139,9 @@ export const supervisorSlice = createSlice({
       })
       .addCase(deleteSupervisorAsync.fulfilled, (state, action) => {
         state.status = "idle";
-        state.supervisorData = state.supervisorData.filter(
-          (supervisor) => supervisor.id !== action.payload.id
-        );
+        // state.supervisorData = state.supervisorData.filter(
+        // (supervisor) => supervisor.supervisor_id !== action.payload.supervisor_id
+        // );
       })
       .addCase(deleteSupervisorAsync.rejected, (state, action) => {
         state.status = "idle";
@@ -125,13 +151,13 @@ export const supervisorSlice = createSlice({
         state.status = "loading";
       })
       .addCase(editSupervisorAsync.fulfilled, (state, action) => {
-        const editSupervisor = action.payload;
-        const index = state.siteData.findIndex(
-          (site) => site.id === editSupervisor.id
+        const editSupervisor = action.payload.supervisor;
+        const index = state.supervisorData.findIndex(
+          (supervisor) =>
+            supervisor.supervisor_id === editSupervisor.supervisor_id
         );
-        console.log(index)
         if (index !== -1) {
-          state.siteData.splice(index, 1, editSupervisor);
+          state.supervisorData.splice(index, 1, editSupervisor);
         }
       })
 
@@ -139,6 +165,18 @@ export const supervisorSlice = createSlice({
         state.status = "idle";
         state.error = action.error.message;
         state.isSuccess = true;
+      })
+      .addCase(getSupervisorAttendanceAsync.pending, (state) => {
+        state.supervisorAttendanceStatus = "loading";
+      })
+      .addCase(getSupervisorAttendanceAsync.fulfilled, (state, action) => {
+        console.log("action ====> ", action);
+        state.supervisorAttendanceStatus = "idle";
+        state.supervisorAttendance = action.payload;
+      })
+      .addCase(getSupervisorAttendanceAsync.rejected, (state, action) => {
+        state.supervisorAttendanceStatus = "idle";
+        state.supervisorAttendanceError = action.error.message;
       });
   },
 });
@@ -147,3 +185,10 @@ export const supervisorSlice = createSlice({
 
 export default supervisorSlice.reducer;
 export const selectSupervisorData = (state) => state.supervisor.supervisorData;
+export const selectSupervisorSatatus = (state) => state.supervisor.status;
+export const selectSupervisorAttendance = (state) =>
+  state.supervisor.supervisorAttendance;
+export const selectSupervisorAttendanceStatus = (state) =>
+  state.supervisor.supervisorAttendanceStatus;
+
+// getSupervisorAttendanceAsync

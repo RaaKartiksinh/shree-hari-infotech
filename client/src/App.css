@@ -10,3 +10,63 @@
   transform: translateY(-1rem) !important;
 }
 
+/* .css-1r7ctd-MuiBadge-badge {
+  top: 83% ;
+  right: 51% ;
+}
+ */
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+/* Site */
+.siteHight {
+  height: calc(100vh - 19rem);
+}
+.loderHight {
+  height: calc(100vh - 18rem);
+}
+.emptyBox {
+  height: calc(100vh - 7rem);
+}
+
+/* Supervisor attndans */
+.PresentBadge {
+  height: 6px;
+  width: 6px;
+  background-color: rgb(0, 218, 0);
+  border-radius: 50%;
+  margin-right: -29px;
+}
+
+.AbsentBadge {
+  height: 6px;
+  width: 6px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: -29px;
+}
+
+.SundayContent {
+  height: 6px;
+  width: 6px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-right: -29px;
+}
+
+.PaidLiveContent {
+  height: 6px;
+  width: 6px;
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: -29px;
+}
+
+/* Tooltip  */
+.MuiTooltip-popper[data-popper-placement*="bottom"]
+  .css-ja5taz-MuiTooltip-tooltip {
+  margin-top: 0px !important;
+}

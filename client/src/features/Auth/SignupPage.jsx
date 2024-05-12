@@ -18,12 +18,9 @@ export default function SignupPage() {
   const isAdminAvailable = useSelector(selectLoggedInUserToken);
   const isAdminError = useSelector(selectAdminError);
 
-  console.log("isAdminAvailable  56565 ", isAdminAvailable);
-
   const createAdmin = async (values) => {
     try {
       let k = dispatch(createAdminAsync(values));
-      console.log(k);
     } catch (error) {
       console.log(error);
     }
@@ -41,13 +38,9 @@ export default function SignupPage() {
           <Formik
             initialValues={{ email: "", password: "", confirmPassword: "" }}
             validate={(values) => {
-              console.log(values);
-
               return Validation(values, "register");
             }}
             onSubmit={(values, { setSubmitting }) => {
-              console.log(values);
-              console.log(setSubmitting);
               createAdmin(values);
             }}
           >

@@ -22,7 +22,6 @@ export default function LoginPage() {
   const loginAdmin = async (values) => {
     try {
       let k = dispatch(loginAdminAsync(values));
-      console.log(k);
     } catch (error) {
       console.log(error);
     }
@@ -50,7 +49,6 @@ export default function LoginPage() {
               return validate(values, "login");
             }}
             onSubmit={(values, { setSubmitting }) => {
-              console.log(values);
               loginAdmin(values);
             }}
           >

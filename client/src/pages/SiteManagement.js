@@ -1,53 +1,93 @@
 import React, { useEffect, useState } from "react";
 import SiteCard from "../components/Comman/Cards/SiteCard";
 import { IoSearch } from "react-icons/io5";
+import { ImBoxRemove } from "react-icons/im";
+
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { useDispatch, useSelector } from "react-redux";
-import { getSiteAsync, selectSiteSiteData } from "./../features/siteSlice";
-import { Box } from "@mui/material";
+import {
+  getSiteAsync,
+  getSiteSupervisorListAsync,
+  selectSiteSiteData,
+  selectSiteStatus,
+} from "./../features/siteSlice";
+import { Pagination, Stack } from "@mui/material";
 import CreateSiteModel from "../components/Models/CreateSiteModel";
-import Button from "../components/Comman/Buttons/Button";
+import CardLoder from "../components/Loder/CardLoder";
 
 const SiteManagement = () => {
   const dispatch = useDispatch();
-  const getSiteData = useSelector(selectSiteSiteData);
-  const [openSiteModel, setOpenSiteModel] = useState(false);
 
-  console.log("getSiteData", getSiteData);
+  const getSiteData = useSelector(selectSiteSiteData);
+  const getSiteStatus = useSelector(selectSiteStatus);
+  const [openSiteModel, setOpenSiteModel] = useState(false);
 
   useEffect(() => {
     dispatch(getSiteAsync());
-    console.log("called get API");
+    dispatch(getSiteSupervisorListAsync());
   }, [dispatch]);
 
   return (
-    <div className="mt-12  ">
-      <div className="grid gap-6 max-sm:px-1 px-10 my-10">
-        <div className="bg-white w-full max-w-7xl md:px-5 lg-6 mx-auto shadow-lg px-4 py-2 rounded-xl font-bold text-xl flex items-center gap-3">
-          <Box
-            variant="div"
-            component="div"
-            className="md:hidden bg-blue-500 rounded-lg px-3"
-          >
-            <Button onClick={() => setOpenSiteModel(true)} className="">
-              Create Site
-            </Button>
-          </Box>
-          <Autocomplete
-            disablePortal
-            id="combo-box-demo"
-            options={top100Films}
-            sx={{ width: "100%" }}
-            renderInput={(params) => <TextField {...params} label="Movie" />}
-          />
-          <IoSearch className="" />
-        </div>
-      </div>
+    <div className="mt-6  relative  ">
+      <section className="w-full max-w-7xl px-4 md:px-5 lg-3 mx-auto">
+        {getSiteStatus === "loading" ? (
+          <CardLoder />
+        ) : (
+          <>
+            {getSiteData && getSiteData.length > 0 ? (
+              <>
+                {/* Search  */}
+                <div className="rounded-b-3xl  border-2 bg-white border-gray-200 p-4 lg:px-4 grid grid-cols-12 gap-y-4">
+                  <div className="col-span-12 lg:col-span-12 flex  items-center  rounded-lg p-0  text-center">
+                    <Autocomplete
+                      disablePortal
+                      id="combo-box-demo"
+                      options={top100Films}
+                      sx={{ width: "100%", border: "none" }}
+                      renderInput={(params) => (
+                        <TextField {...params} label="search site..." />
+                      )}
+                    />
+                  </div>
+                </div>
 
-      {getSiteData.map((siteData, index) => (
-        <SiteCard key={index} siteData={siteData} />
-      ))}
+                {/* Site Cart  */}
+                {getSiteData.map((siteData, index) => (
+                  <SiteCard key={index} siteData={siteData} />
+                ))}
+
+                {/* Pagination  */}
+                <section className=" relative -mt-4">
+                  <div className="rounded-b-lg  border-2 bg-white border-gray-200 p-4 lg:px-4 grid grid-cols-12 gap-y-4">
+                    <div className="col-span-12 lg:col-span-12 flex  items-center  rounded-lg p-0  text-center">
+                      <Stack
+                        spacing={2}
+                        width={"100%"}
+                        className="flex  items-center"
+                      >
+                        <Pagination count={10} shape="rounded" />
+                      </Stack>
+                    </div>
+                  </div>
+                </section>
+              </>
+            ) : (
+              <>
+                {/* Emty Data Commponents  */}
+                <div className="rounded-xl  border-2 bg-white border-gray-200 p-4 lg:px-4 flex items-center   emptyBox">
+                  <div className="col-span-12 lg:col-span-12 rounded-lg  text-center bg-slate-50 flex justify-center items-center w-full siteHight">
+                    <div className="p-0  text-gray-500 flex justify-center items-center flex-col ">
+                      <span className="text-xl"> Sorry, No Data Available</span>
+                      <ImBoxRemove className="text-8xl mt-3" />
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+          </>
+        )}
+      </section>
 
       {/* Models Site  */}
       <CreateSiteModel

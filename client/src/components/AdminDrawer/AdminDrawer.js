@@ -39,7 +39,6 @@ function AdminDrawer(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   const theme = useTheme();
-  console.log(theme.palette.background.sidebackground);
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -149,7 +148,7 @@ export default AdminDrawer;
 
 // Header style
 const headerStyles = {
-  backgroundColor: "rgba(255, 255, 255, 0.8)",
+  backgroundColor: "rgba(255, 255, 255, 1)",
   color: "#344767",
   top: "0.75rem",
   right: "0.2rem",

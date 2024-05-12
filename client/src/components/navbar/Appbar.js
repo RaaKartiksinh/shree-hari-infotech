@@ -27,14 +27,12 @@ function NavAppBar() {
   const location = useLocation();
 
   const isAdminAvailable = useSelector(selectLoggedInUserToken);
-  console.log(location);
 
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [openSiteModel, setOpenSiteModel] = useState(false);
   const [openSupervisorModel, setOpenSupervisorModel] = React.useState(false);
 
   const handleOpenUserMenu = (event) => {
-    console.log(event.onClick);
     setAnchorElUser(event.currentTarget);
   };
 
@@ -187,7 +185,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
     },
     "100%": {
       transform: "scale(2.4)",
-      opacity: 0,
+      opacity: 1,
     },
   },
 }));

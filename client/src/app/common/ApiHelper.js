@@ -26,45 +26,55 @@ class ApiHelper {
     }
   }
 
+  // Site Supervisor List
+  async getSiteSupervisorList() {
+    return axios.get(`${this.baseUrl}/supervisorNameandid`);
+  }
+
   // Get Site
   async getSite() {
-    return axios.get(`${this.baseUrl}/sidedata`);
+    return axios.get(`${this.baseUrl}/site`);
   }
 
   // Create Site
   async createSite(data) {
-    return axios.post(`${this.baseUrl}/sidedata/`, data);
+    return axios.post(`${this.baseUrl}/site`, data);
   }
 
   // Update Site
-  async updateSite(updateSiteData) {
-    return axios.put(
-      `${this.baseUrl}/sidedata/${updateSiteData.id}`,
-      updateSiteData.values
-    );
+  async updateSite(id, data) {
+    return axios.put(`${this.baseUrl}/site/${id}`, data);
   }
 
   // Delete Site
   async deleteSite(id) {
-    return axios.delete(`${this.baseUrl}/sidedata/${id}`);
+    return axios.delete(`${this.baseUrl}/site/${id}`);
   }
 
-  // Supervisor
+  //  Get Supervisor
   async getSupervisor() {
-    return axios.get(`${this.baseUrl}/super`);
+    return axios.get(`${this.baseUrl}/supervisor`);
   }
   // create supervisor
   async createSupervisor(data) {
-    return axios.post(`${this.baseUrl}/super/`, data);
+    return axios.post(`${this.baseUrl}/supervisor`, data);
   }
   // edit supervisor
   async editSupervisor(editSupervisor) {
-    return axios.put(`${this.baseUrl}/super/${editSupervisor.id}`,editSupervisor);
+    return axios.put(
+      `${this.baseUrl}/supervisor/${editSupervisor.id}`,
+      editSupervisor.values
+    );
   }
-  
+
   // delete supervisor
-  async deleteSupervisor(id) {
-    return axios.delete(`${this.baseUrl}/super/${id}`);
+  async deleteSupervisor(supervisor_id) {
+    return axios.delete(`${this.baseUrl}/supervisor/${supervisor_id}`);
+  }
+
+  // Get Supervisor Attendance
+  async getSupervisorAttendance(s_id) {
+    return axios.get(`${this.baseUrl}/supervisorDate/${s_id}`);
   }
 }
 

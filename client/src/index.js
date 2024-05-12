@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { store } from "./app/store";
 import App from "./App";
 import "./index.css";
+import "./App.css";
 
 import theme from "./app/common/Theme";
 import { ThemeProvider } from "@emotion/react";

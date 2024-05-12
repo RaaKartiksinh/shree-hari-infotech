@@ -60,7 +60,6 @@ const listIcons = {
 const DrawerMenu = () => {
   const location = useLocation();
   const isAdminAvailable = useSelector(selectLoggedInUserToken);
-  console.log(isAdminAvailable);
 
   return (
     <div className="">
@@ -116,7 +115,7 @@ const DrawerMenu = () => {
           </ListItem>
         </Link>
       </List>
-  
+
       <List
         style={
           location.pathname === path.siteManagementList

@@ -30,7 +30,6 @@ export const loginAdminAsync = createAsyncThunk(
   async (adminData, { rejectWithValue }) => {
     try {
       const result = await apiHelper.loginAdmin(adminData);
-      console.log(result);
 
       if (result) {
         return result;
@@ -54,7 +53,6 @@ export const authSlice = createSlice({
   initialState,
   reducers: {
     logOut: (state) => {
-      console.log(state);
       state.loggedInUserToken = null;
     },
   },
@@ -75,14 +73,10 @@ export const authSlice = createSlice({
         state.status = "loading";
       })
       .addCase(loginAdminAsync.fulfilled, (state, action) => {
-        console.log(state);
-        console.log(action);
         state.status = "idle";
         state.loggedInUserToken = action.payload;
       })
       .addCase(loginAdminAsync.rejected, (state, action) => {
-        console.log(state);
-        console.log(action);
         state.status = "idle";
         state.error = action.error.message;
       });
